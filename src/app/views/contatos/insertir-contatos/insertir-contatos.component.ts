@@ -33,7 +33,7 @@ export class InsertirContatosComponent implements OnInit {
     this.contatoService.inserir(this.contatoVM).subscribe((res) => {
       console.log(res);
     
-      this.router.navigate(['/dashboard']);
+      this.router.navigate(['/contatos/listar']);
   });
  }
 }
